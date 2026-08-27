@@ -1,0 +1,21 @@
+# trace minimal-q1
+모델: qwen2.5:3b    temperature: 0
+실행: uv run --with langchain --with langchain-ollama python lab2_matrix.py
+시각: 2026-08-27T13:18:08
+조건: description = minimal    문항 의도 = 정상 경로
+
+[설명 문장]
+상품 재고를 조회합니다.
+
+[0] 요청 문장
+BUSAN-02 창고의 SKU A-17 재고를 알려 줘
+
+[1] 모델의 요청
+[('get_inventory', {'sku': 'A-17', 'warehouse_id': 'BUSAN-02'})]
+    prompt_eval_count: 189
+
+[2] 하네스의 실행 결과
+{"sku": "A-17", "warehouse_id": "BUSAN-02", "available_quantity": 7, "checked_at": "2026-08-27T01:55:00+09:00"}
+
+[3] 최종 답
+The current available quantity of product A-17 in warehouse BUSAN-02 is 7. This information was last checked on 2026-08-27T01:55:00+09:00.

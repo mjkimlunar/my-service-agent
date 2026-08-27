@@ -1,0 +1,101 @@
+[
+ {
+  "설명": "minimal",
+  "문항": "q1",
+  "의도": "정상 경로",
+  "호출": "get_inventory",
+  "warehouse_id": "BUSAN-02",
+  "sku": "A-17",
+  "반환": "성공",
+  "토큰": 189,
+  "파일": "minimal-q1.txt"
+ },
+ {
+  "설명": "minimal",
+  "문항": "q2",
+  "의도": "창고 미지정",
+  "호출": "get_inventory",
+  "warehouse_id": "SEOUL-01",
+  "sku": "A-17",
+  "반환": "성공",
+  "토큰": 186,
+  "파일": "minimal-q2.txt"
+ },
+ {
+  "설명": "minimal",
+  "문항": "q3",
+  "의도": "허용 밖 창고",
+  "호출": "get_inventory",
+  "warehouse_id": "BUSAN-02",
+  "sku": "A-17",
+  "반환": "성공",
+  "토큰": 188,
+  "파일": "minimal-q3.txt"
+ },
+ {
+  "설명": "contextual",
+  "문항": "q1",
+  "의도": "정상 경로",
+  "호출": "get_inventory",
+  "warehouse_id": "BUSAN-02",
+  "sku": "A-17",
+  "반환": "성공",
+  "토큰": 334,
+  "파일": "contextual-q1.txt"
+ },
+ {
+  "설명": "contextual",
+  "문항": "q2",
+  "의도": "창고 미지정",
+  "호출": "get_inventory",
+  "warehouse_id": "SEOUL-01",
+  "sku": "A-17",
+  "반환": "성공",
+  "토큰": 331,
+  "파일": "contextual-q2.txt"
+ },
+ {
+  "설명": "contextual",
+  "문항": "q3",
+  "의도": "허용 밖 창고",
+  "호출": "get_inventory",
+  "warehouse_id": "BUSAN-02",
+  "sku": "A-17",
+  "반환": "성공",
+  "토큰": 333,
+  "파일": "contextual-q3.txt"
+ },
+ {
+  "설명": "contextual_v2",
+  "문항": "q1",
+  "의도": "정상 경로",
+  "호출": "get_inventory",
+  "warehouse_id": "BUSAN-02",
+  "sku": "A-17",
+  "반환": "성공",
+  "토큰": 395,
+  "파일": "contextual_v2-q1.txt"
+ },
+ {
+  "설명": "contextual_v2",
+  "문항": "q2",
+  "의도": "창고 미지정",
+  "호출": "get_inventory",
+  "warehouse_id": "-",
+  "sku": "A-17",
+  "반환": "오류:MISSING_REQUIRED_ARG",
+  "토큰": 392,
+  "파일": "contextual_v2-q2.txt"
+ },
+ {
+  "설명": "contextual_v2",
+  "문항": "q3",
+  "의도": "허용 밖 창고",
+  "호출": "get_inventory",
+  "warehouse_id": "BUSAN-02",
+  "sku": "A-17",
+  "반환": "성공",
+  "토큰": 394,
+  "파일": "contextual_v2-q3.txt"
+ }
+]
